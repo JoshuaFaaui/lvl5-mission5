@@ -14,7 +14,7 @@ services:
       DB_URL: mongodb://db/lvl5-mission5
     
   db:
-    image: mongo:4.0-xenial
+    image: mongo:latest
     ports:
       - 27017:27017
     volumes:
