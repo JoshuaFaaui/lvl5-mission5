@@ -18,7 +18,7 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - lvl5-mission5:/data/db
+      - ./lvl5-mission5:/data/db
 volumes:
   lvl5-mission5:
 
