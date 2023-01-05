@@ -2,23 +2,31 @@ version: '3.8'
 services:
 
   webapp:
+    container_name: mongo-dockerised
     build: ./frontend
     ports:
       - 3000:3000
+    links: 
+      - mongo
 
   api:
     build: ./backend
     ports:
       - 3001:3001
+    volumes:
+      - ./backend:/usr/src/app
     environment:
-      DB_URL: mongodb://db/lvl5-mission5
-    
-  db:
+      DB_URL: mongodb://db/data
+    depends_on:
+      - mongo
+  
+  mongo:
+    container_name: mongo
     image: mongo:latest
     ports:
       - 27017:27017
     volumes:
-      - ./lvl5-mission5:/data/db
+      - ./data:/data/db
 volumes:
-  lvl5-mission5:
+  data:
 
