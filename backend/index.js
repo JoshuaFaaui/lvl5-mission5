@@ -8,7 +8,8 @@ app.use(express.json())
 mongoose.set("strictQuery", true)
 
 const details = "mongodb://mongo:27017/mongo-dockerised";
-mongoose.connect(details)
+const details2 = "mongodb+srv://Josh:HelloWorld@cluster0.csi3hib.mongodb.net/?retryWrites=true&w=majority"
+mongoose.connect(details2)
 .then(() => {
     console.log('connected to database')
 
