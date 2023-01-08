@@ -1,0 +1,54 @@
+#PropWatchHeadingF {
+  display: flex;
+  justify-content: center;
+}
+
+#PropWatchHeadingF > h1 {
+  font-size: 3rem;
+}
+
+#PropWatchSliderF {
+  display: flex;
+  justify-content: center;
+}
+
+#PropWatchSliderp1 {
+  width: 96%;
+  padding-left: 3rem;
+}
+
+.ImageSlideInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  bottom: 3rem;
+}
+
+.ImageSlideInfo > h3 {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+.ImageSlideInfo > h2 {
+  color: black;
+  background-color: white;
+  opacity: 50%;
+}
+
+#SearchRentalsButton {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: red;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 10%;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}/*# sourceMappingURL=PropWatchStyling.css.map */

@@ -1,0 +1,76 @@
+#NavbarFoundation {
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#NavbarFoundationp1 {
+  display: flex;
+  justify-content: space-between;
+  width: 70rem;
+  height: 6.5rem;
+}
+
+#Navimg {
+  position: relative;
+  height: 7rem;
+  width: 24rem;
+}
+
+#Navimg > img {
+  height: 100%;
+  width: 100%;
+}
+
+#LinksFoundation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+
+#LinksFoundation > li {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.4rem;
+}
+
+#NavHr {
+  background-color: black;
+  color: black;
+  height: 2px;
+}
+
+@media (max-width: 1066px) {
+  #Login {
+    display: none;
+  }
+}
+@media (max-width: 963px) {
+  #Register {
+    display: none;
+  }
+}
+@media (max-width: 833px) {
+  #News {
+    display: none;
+  }
+}
+@media (max-width: 729px) {
+  #Tenants {
+    display: none;
+  }
+}
+@media (max-width: 603px) {
+  #PropertyOwners {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
