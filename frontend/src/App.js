@@ -1,15 +1,17 @@
-import './App.css';
-import Search from './comps/Search';
-import Display from './comps/Display';
+import { Routes, Route } from 'react-router-dom'
+import MyMetro from './pages/MyMetro'
+import SuccApp from './pages/SuccApp'
+import Home from './pages/Home';
 import { useState } from 'react';
 function App() {
-    const [quotes, setQuotes] = useState('')
+  const [DetailsToDisplay, setDetailsToDisplay] = useState([]);
+
   return (
-    <div>
-      <h1>Hello wrld</h1>
-      <Search setQuotes={setQuotes} />
-      <Display quotes={quotes} />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/MyMetro" element={<MyMetro setDetailsToDisplay={setDetailsToDisplay} />} />
+      <Route path="/SuccApp" element={<SuccApp  DetailsToDisplay={DetailsToDisplay} />} />
+    </Routes>
   );
 }
 
